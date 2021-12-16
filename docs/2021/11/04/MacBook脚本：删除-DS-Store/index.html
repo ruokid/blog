@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>MacBook脚本：删除.DS_Store | cx&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="12# 禁止在连接的储存中创建 .DS_Store 文件defaults write com.apple.desktopservices DSDontWriteNetworkStores true  1234567891011121314151617181920212223#!&#x2F;bin&#x2F;sh## Remove all .DS_Store file# author: cx# # 使用方法：打开终端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MacBook脚本：删除.DS_Store">
+<meta property="og:url" content="https://ruokid.github.io/blog/2021/11/04/MacBook%E8%84%9A%E6%9C%AC%EF%BC%9A%E5%88%A0%E9%99%A4-DS-Store/index.html">
+<meta property="og:site_name" content="cx&#39;s blog">
+<meta property="og:description" content="12# 禁止在连接的储存中创建 .DS_Store 文件defaults write com.apple.desktopservices DSDontWriteNetworkStores true  1234567891011121314151617181920212223#!&#x2F;bin&#x2F;sh## Remove all .DS_Store file# author: cx# # 使用方法：打开终端">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-11-04T03:49:58.000Z">
+<meta property="article:modified_time" content="2021-11-22T18:03:21.186Z">
+<meta property="article:author" content="cx">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/blog/atom.xml" title="cx&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">cx&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ruokid.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-MacBook脚本：删除-DS-Store" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2021/11/04/MacBook%E8%84%9A%E6%9C%AC%EF%BC%9A%E5%88%A0%E9%99%A4-DS-Store/" class="article-date">
+  <time datetime="2021-11-04T03:49:58.000Z" itemprop="datePublished">2021-11-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MacBook脚本：删除.DS_Store
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 禁止在连接的储存中创建 .DS_Store 文件</span></span><br><span class="line">defaults write com.apple.desktopservices DSDontWriteNetworkStores true</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="bash"><span class="comment"># Remove all .DS_Store file</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> author: cx</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用方法：打开终端 -&gt; 执行./rm.DS_Store.sh [可选文件夹路径]</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 例如：./rm.DS_Store.sh</span></span><br><span class="line"><span class="meta">#</span><span class="bash">      ./rm.DS_Store.sh ~/Downloads</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="bash"></span><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Terminal work directory</span></span><br><span class="line">twd=$(pwd)</span><br><span class="line"><span class="meta">#</span><span class="bash"> Script work directory</span></span><br><span class="line">swd=$(cd $(dirname $0); pwd)</span><br><span class="line"></span><br><span class="line">find $&#123;1:-$swd&#125; \</span><br><span class="line">-path ~/Library -prune -o \</span><br><span class="line">-name &quot;.DS_Store&quot; \</span><br><span class="line">-exec rm &#123;&#125; \; \</span><br><span class="line">-exec echo &#123;&#125; removed \;</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">echo</span> All .DS_Store have been removed<span class="string">&quot;</span></span></span><br><span class="line">echo &quot;\033[32mAll .DS_Store have been removed\033[0m&quot;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ruokid.github.io/blog/2021/11/04/MacBook%E8%84%9A%E6%9C%AC%EF%BC%9A%E5%88%A0%E9%99%A4-DS-Store/" data-id="ckx8q9nt400008etkeir7ezn0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2021/11/23/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/MacBook-M1-macOS-Monterey/" rel="tag">MacBook,M1,macOS,Monterey</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/blog/tags/MacBook-M1-macOS-Monterey/" style="font-size: 10px;">MacBook,M1,macOS,Monterey</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2021/12/">十二月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2021/11/">十一月 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/blog/2021/12/16/%E5%9C%A8MacBook-Pro-M1-%E7%9A%84UTM%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%87%8C%E5%AE%89%E8%A3%85x86%E6%9E%B6%E6%9E%84%E7%9A%84CentOS7/">在MacBook Pro(M1)的UTM虚拟机里安装x86架构的CentOS7</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2021/12/10/%E5%AE%89%E8%A3%85%E5%B7%B2%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%81%E7%9A%84Windows-Server-2008-R2/">安装已不受支持的Windows Server 2008 R2</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2021/11/29/macOS%E7%9A%84homebrew-v2ray%E9%85%8D%E7%BD%AE/">macOS的homebrew-v2ray配置</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2021/11/23/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2021/11/04/MacBook%E8%84%9A%E6%9C%AC%EF%BC%9A%E5%88%A0%E9%99%A4-DS-Store/">MacBook脚本：删除.DS_Store</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 cx<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+
+  
+<script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
